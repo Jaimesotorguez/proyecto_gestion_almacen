@@ -1,0 +1,172 @@
+/* Estilos para el menú de navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5C5C5C;
+  height: 60px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+  position: relative;
+}
+
+nav a {
+  color: #FFF;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #FFC107;
+}
+
+/* Submenús */
+.submenu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #FFF;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.submenu li {
+  display: block;
+  width: 200px;
+}
+
+.submenu a {
+  padding: 10px;
+  color: #333;
+}
+
+.submenu a:hover {
+  background-color: #EEE;
+}
+
+/* Mostrar submenús */
+nav li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+
+
+.form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.caja {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+            text-align: center;
+            margin-bottom: 20px;
+}
+
+label {
+            font-weight: bold;
+}
+
+/* Estilos para el botón principal */
+button[type="submit"].primary {
+    background-color: rgb(0, 123, 255);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"].primary:hover {
+    background-color: #0069d9;
+}
+
+/* Estilos para el botón secundario */
+button[type="submit"].secondary {
+    background-color: #6c757d;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+button[type="submit"].secondary:hover {
+    background-color: #5a6268;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+body {
+            background-color: #f8f9fa;
+            margin-top: 0;
+}
+
+hr {
+			border: none;
+			border-top: 2px solid #333; /* Cambia #333 por el color que desees */
+}
+
+table {
+  margin: 20px auto;
+  background-color: #f8f9fa;
+  border-collapse: collapse;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agregamos una sombra */
+  transform: translate3d(0, 0, 0); /* Hacemos que la tabla tenga más profundidad */
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
